@@ -1,0 +1,98 @@
+baseurl             = "https://marcodenisi.dev"
+builddrafts         = false
+canonifyurls        = true
+contentdir          = "content"
+languageCode        = "it"
+DefaultContentLanguage = "it"
+defaultContentLanguageInSubdir = true
+layoutdir           = "layouts"
+publishdir          = "public"
+theme               = "cocoa"
+author              = "Marco Denisi"
+title               = "Marco Denisi"
+pygmentsuseclasses  = true
+# disqusshortname     = "cocoaexamplesite" # Comment out to disable Disqus.
+pluralizelisttitles = false
+googleAnalytics     = "UA-123-45"
+
+
+[languages]
+  [languages.it]
+    weight = 1
+    contentDir = "content/italian"
+  [languages.en]
+    weight = 2
+    contentDir = "content/english"
+
+[permalinks]
+blog  = "blog/:slug/"
+
+[[languages.it.menu.main]]
+name                   = "Blog"
+weight                 = -120
+identifier             = "blog"
+url                    = "/blog/"
+
+[[languages.it.menu.main]]
+name                   = "Chi Sono"
+weight                 = -110
+identifier             = "about"
+url                    = "/about/"
+
+[[languages.en.menu.main]]
+name                   = "Blog"
+weight                 = -120
+identifier             = "blog"
+url                    = "/blog/"
+
+[[languages.en.menu.main]]
+name                   = "About"
+weight                 = -110
+identifier             = "about"
+url                    = "/about/"
+
+[params]
+include_rss            = true                          # include RSS <link> tag in <head> and show RSS icon
+latestpostscount       = 5                             # how many posts to display on the home page
+i18n_flags             = true                         # whether to display small country flags for available translations
+author                 = "Marco Denisi"
+cachebuster            = true                          # add the current unix timestamp in query string for cache busting css assets
+dateform               = "02/01/2006"
+dateformfull           = "02/01/2006 15:04"
+description            = "Don't panic"
+email                  = "marcodenisi35@gmail.com"
+extracssfiles          = [ "/css/override.css" ]       # In your `static` directory, add/remove files as necessary.
+faviconfile            = "img/leaf.ico"
+github                 = "//github.com/marcodenisi"
+#instagram              = "//instagram.com/you"
+#px500                  = "//500px.com/username"
+lang                   = "it"
+linkedin               = "//linkedin.com/in/marco-denisi"
+noshowreadtime         = false                         # if true, don't show "<x> minutes read" in posts
+selfintro              = ""                            # appears in the site header when set to a non-empty string
+#twitter                = "//twitter.com/you"
+#mastodon               = "//example.com/@you"
+#telegram               = "//t.me/you"
+
+highlightjs            = true
+# highlightjslanguages = ["go"]                        # additional languages not included in the "common" set
+# highlightjsStyle     = "darcula"
+
+piwik                  = false                         # If true, Piwik integration is enabled
+# piwik_url            = "//www.example.com/piwik/"    # URL to your Piwik installation. Must End with a slash
+# piwik_id             = 2                             # Id of your site in Piwik
+
+gitalk                 = false
+# if gitalk is true, the following params should be set. These parameters could be retrieved from github OAuth
+gitalk_clientID        = "your client id"
+gitalk_clientSecret    = "your client secret"
+gitalk_repo            = "your repo url"
+gitalk_owner           = "the owner of this repo"
+gitalk_admin           = ['a', 'list', 'of', 'administrator']
+
+avatar                 = "img/profile_square_small.png" # path to image in static dir e.g img/avatar.png (do not use in the same time as gravatar)
+# gravatar             = ""                # gravatar hash. see https://en.gravatar.com/site/implement/hash/. do not use in the same time as avatar
+
+# The following are DEPRECATED.
+gatracker              = "XYZ" # use googleAnalytics instead
+initials               = "ad"  # displayed on single post page; deprecated in v0.3.0.
