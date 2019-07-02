@@ -13,7 +13,7 @@ You can now access the blog through the browser at `localhost:1313`.
 ### Add New Blog Post
 Just run
 
-`hugo new blog/your-new-post.md``
+`hugo new blog/your-new-post.md`
 
 This will create a new post in the default language directory. To add the post to other languages, copy/paste the file and add the `.en` suffix before the file extension.
 
