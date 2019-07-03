@@ -1,4 +1,4 @@
-baseurl             = "https://marcodenisi.github.io"
+baseurl             = "https://marcodenisi.dev"
 builddrafts         = false
 canonifyurls        = true
 contentdir          = "content"
