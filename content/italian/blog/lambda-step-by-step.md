@@ -1,6 +1,6 @@
 ---
 title: "Lambda Step by Step"
-date: 2019-09-26T19:07:46+02:00
+date: 2019-09-26T00:07:46+02:00
 draft: false
 categories: ["Development"]
 tags: ["aws", "lambda", "sam", "java8"]
