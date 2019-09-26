@@ -54,7 +54,7 @@ url                    = "/about/"
 [params]
 include_rss            = true                          # include RSS <link> tag in <head> and show RSS icon
 latestpostscount       = 5                             # how many posts to display on the home page
-i18n_flags             = true                         # whether to display small country flags for available translations
+i18n_flags             = true                          # whether to display small country flags for available translations
 author                 = "Marco Denisi"
 cachebuster            = true                          # add the current unix timestamp in query string for cache busting css assets
 dateform               = "02/01/2006"
@@ -75,7 +75,7 @@ selfintro              = ""                            # appears in the site hea
 #telegram               = "//t.me/you"
 
 highlightjs            = true
-# highlightjslanguages = ["go"]                        # additional languages not included in the "common" set
+highlightjslanguages = ["go", "yaml"]                        # additional languages not included in the "common" set
 # highlightjsStyle     = "darcula"
 
 piwik                  = false                         # If true, Piwik integration is enabled
