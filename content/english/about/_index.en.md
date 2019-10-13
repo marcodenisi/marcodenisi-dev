@@ -1,8 +1,8 @@
 +++
-date = "2015-08-22T06:42:21-07:00"
+date = "2019-09-26T00:07:46+02:00"
 draft = false
 title = "About"
-
+Description = "Hello! I'm Marco, a software engineer based in Lecco, Italy who enjoys building things and solving problems."
 +++
 
 Hello! I'm Marco, a software engineer based in Lecco, Italy who enjoys building things and solving problems. I usually work on backend systems, designing APIs or studying the best way to orchenstrate services.

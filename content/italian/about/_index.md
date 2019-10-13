@@ -1,8 +1,8 @@
 +++
-date = "2015-08-22T06:42:21-07:00"
+date = "2019-09-26T00:07:46+02:00"
 draft = false
 title = "Chi sono"
-
+Description = "Ciao! Sono Marco, un *software engineer*. Vivo a Lecco e mi piace costruire *cose* e risolvere problemi."
 +++
 
 Ciao! Sono Marco, un *software engineer*. Vivo a Lecco e mi piace costruire *cose* e risolvere problemi. Solitamente lavoro su sistemi backend, sviluppando API o studiando la via migliore di orchestrare servizi.
