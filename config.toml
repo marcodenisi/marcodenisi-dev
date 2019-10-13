@@ -14,6 +14,7 @@ pygmentsuseclasses  = true
 # disqusshortname     = "cocoaexamplesite" # Comment out to disable Disqus.
 pluralizelisttitles = false
 googleAnalytics     = "UA-143191600-1"
+enableRobotsTXT     = true
 
 
 [languages]
@@ -75,7 +76,7 @@ selfintro              = ""                            # appears in the site hea
 #telegram               = "//t.me/you"
 
 highlightjs            = true
-highlightjslanguages = ["go", "yaml"]                        # additional languages not included in the "common" set
+highlightjslanguages = ["go", "yaml"]                  # additional languages not included in the "common" set
 # highlightjsStyle     = "darcula"
 
 piwik                  = false                         # If true, Piwik integration is enabled
