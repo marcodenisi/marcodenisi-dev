@@ -9,4 +9,4 @@ Hello! I'm Marco, a software engineer based in Lecco, Italy who enjoys building 
 
 I'm currently part of the engineering team at Sky Italia where I work on a variety of projects on a daily basis, most of them written in Java.
 
-Curious about my working experience? You can find my latest cv [here](https://github.com/marcodenisi/cv/releases/download/v0.1.5/cv_MarcoDenisi.pdf). And yes, also my cv is *continuously integrated*, check my [github repo](https://github.com/marcodenisi/cv).
+Curious about my working experience? You can find my latest cv [here](/cv_MarcoDenisi.pdf). And yes, also my cv is *continuously integrated*, check my [github repo](https://github.com/marcodenisi/cv).

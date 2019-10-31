@@ -9,4 +9,4 @@ Ciao! Sono Marco, un *software engineer*. Vivo a Lecco e mi piace costruire *cos
 
 Attualmente faccio parte dell'engineering team di Sky Italia, dove lavoro ogni giorno su diversi progetti, principalmente basati su Java.
 
-Vorresti sapere di più sulla mia esperienza lavorativa? Puoi trovare il mio ultimo curriculum [qui](https://github.com/marcodenisi/cv/releases/download/v0.1.5/cv_MarcoDenisi.pdf). E si, anche il mio cv è *continuously integrated*, come puoi vedere sul mio [repository github](https://github.com/marcodenisi/cv).
+Vorresti sapere di più sulla mia esperienza lavorativa? Puoi trovare il mio ultimo curriculum [qui](/cv_MarcoDenisi.pdf). E si, anche il mio cv è *continuously integrated*, come puoi vedere sul mio [repository github](https://github.com/marcodenisi/cv).
