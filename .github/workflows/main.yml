@@ -1,0 +1,49 @@
+name: Deploy new version
+on: push
+jobs:
+  deploy_blog:
+  runs-on: ubuntu-latest
+  steps:
+    - name: Checkout master
+      uses: actions/checkout@v1
+    - name: Build blog and deploy
+      run:  |
+        set -e
+
+        # download hugo
+        echo 'Downloading and installing Hugo'
+        wget -O /tmp/hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v${DOWNLOAD_HUGO_VERSION}/hugo_extended_${DOWNLOAD_HUGO_VERSION}_Linux-64bit.tar.gz &&\
+        tar -zxf /tmp/hugo.tar.gz -C /tmp &&\
+        mv /tmp/hugo /usr/local/bin/hugo &&\
+        rm /tmp/*
+
+        # configure git
+        echo 'Configuring git'
+        git config --global user.name "$USER"
+        git config --global user.email "$EMAIL"
+
+        # setup ssh
+        echo 'Setting up ssh'
+        mkdir ~/.ssh
+        chmod 700 ~/.ssh
+        echo "${GIT_DEPLOY_KEY}" > ~/.ssh/id_rsa && \
+        chmod 600 ~/.ssh/id_rsa
+    
+        # build site and push to repo
+        echo 'Building site and push to repo'
+        hugo -t cocoa
+        cd public
+        git add .
+        msg="rebuilding site `date`"
+        if [ $# -eq 1 ]
+          then msg="$1"
+        fi
+        git commit -m "$msg"
+        git push origin master
+      env:
+        DOWNLOAD_HUGO_VERSION: '0.54.0'
+        USER: ${{ secrets.USER }}
+        EMAIL: ${{ secrets.EMAIL }}
+        GIT_DEPLOY_KEY: ${{ secrets.GIT_DEPLOY_KEY }}
+
+
