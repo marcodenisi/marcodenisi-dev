@@ -13,9 +13,7 @@ jobs:
         # download hugo
         echo 'Downloading and installing Hugo'
         wget -O /tmp/hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v${DOWNLOAD_HUGO_VERSION}/hugo_extended_${DOWNLOAD_HUGO_VERSION}_Linux-64bit.tar.gz &&\
-        tar -zxf /tmp/hugo.tar.gz -C /tmp &&\
-        mv /tmp/hugo /usr/local/bin/hugo &&\
-        rm /tmp/*
+        tar -zxf /tmp/hugo.tar.gz -C /tmp
 
         # configure git
         echo 'Configuring git'
@@ -31,7 +29,7 @@ jobs:
     
         # build site and push to repo
         echo 'Building site and push to repo'
-        hugo -t cocoa
+        /tmp/hugo -t cocoa
         cd public
         git add .
         msg="rebuilding site `date`"
