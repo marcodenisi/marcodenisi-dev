@@ -1,0 +1,49 @@
+name: Deploy new version
+on: 
+  push:
+    branches:
+      - master
+      
+jobs:
+  deploy_blog:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout master
+      uses: actions/checkout@v1
+    - name: Build blog and deploy
+      run:  |
+        set -e
+
+        # download hugo
+        wget -O /tmp/hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v${DOWNLOAD_HUGO_VERSION}/hugo_extended_${DOWNLOAD_HUGO_VERSION}_Linux-64bit.tar.gz &&\
+        tar -zxf /tmp/hugo.tar.gz -C /tmp
+
+        # configure git
+        git config --global user.name "$USER"
+        git config --global user.email "$EMAIL"
+
+        # setup ssh
+        mkdir ~/.ssh
+        chmod 700 ~/.ssh
+        echo "${GIT_DEPLOY_KEY}" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        git config --global core.sshCommand "ssh -i ~/.ssh/id_rsa -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no"
+    
+        # download theme and output repo
+        git clone https://github.com/nishanths/cocoa-hugo-theme.git themes/cocoa
+        git clone --depth=1 git@github.com:marcodenisi/marcodenisi.github.io.git public 
+
+        # build site and push to repo
+        /tmp/hugo -t cocoa
+        msg=$(git log -1 --pretty=%B)
+        cd public
+        git add .
+        git commit -m "$msg"
+        git push origin master
+      env:
+        DOWNLOAD_HUGO_VERSION: '0.54.0'
+        USER: ${{ secrets.USER }}
+        EMAIL: ${{ secrets.EMAIL }}
+        GIT_DEPLOY_KEY: ${{ secrets.GIT_DEPLOY_KEY }}
+
+
