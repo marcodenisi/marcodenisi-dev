@@ -29,14 +29,14 @@ jobs:
     
         # build site and push to repo
         /tmp/hugo -t cocoa
-        #cd public
-        #git add .
-        #msg="rebuilding site `date`"
-        #if [ $# -eq 1 ]
-        #  then msg="$1"
-        #fi
-        #git commit -m "$msg"
-        #git push origin master
+        cd public
+        git add .
+        msg="rebuilding site `date`"
+        if [ $# -eq 1 ]
+          then msg="$1"
+        fi
+        git commit -m "$msg"
+        git push origin master
       env:
         DOWNLOAD_HUGO_VERSION: '0.54.0'
         USER: ${{ secrets.USER }}
