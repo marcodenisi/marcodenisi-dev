@@ -25,7 +25,10 @@ jobs:
         chmod 600 ~/.ssh/id_rsa
     
         # build site and push to repo
-         /tmp/hugo
+        # /tmp/hugo
+        cd themes/cocoa
+        ls
+        git status
         #cd public
         #git add .
         #msg="rebuilding site `date`"
