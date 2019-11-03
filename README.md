@@ -1,7 +1,11 @@
+<!-- PROJECT SHIELDS -->
+[![Build Status](https://github.com/marcodenisi/marcodenisi-dev/workflows/Deploy%20new%20version/badge.svg)](https://github.com/marcodenisi/marcodenisi-dev/actions)
+
 # Personal Website
 
 [Personal website](www.marcodenisi.dev) and blog written using [Hugo](https://gohugo.io/). 
 The template used is the [Cocoa](https://themes.gohugo.io/cocoa/).
+Continuous delivery provided by [Github Actions](https://github.com/actions).
 
 ## Installation
 
@@ -9,6 +13,8 @@ To run locally, open the terminal, navigate to the root folder and type `hugo se
 You can now access the blog through the browser at `localhost:1313`.
 
 ## Add Content
+
+When adding new content, please open a new feature branch, do not work on master branch.
 
 ### Add New Blog Post
 Just run
@@ -21,4 +27,4 @@ This will create a new post in the default language directory. To add the post t
 
 Once you're done with the changes or adding a new blog post, you can deploy to GitHub Pages the new site version. 
 
-To do so, just open your terminal, navigate to the root folder and type `./deploy "Your comment"`. After a couple of minutes you'll see changes at https://marcodenisi.github.io.
+To do so, open a new PR and merge the previously created feature branch into master. This will fire a new Github Actions Workflow that will build the site and push it to the blog repository. See `.github/workflows/main.yml` for details.
