@@ -25,9 +25,7 @@ jobs:
         chmod 600 ~/.ssh/id_rsa
     
         # build site and push to repo
-        # /tmp/hugo -t cocoa
-        cd themes/cocoa
-        ls
+         /tmp/hugo
         #cd public
         #git add .
         #msg="rebuilding site `date`"
