@@ -1,5 +1,9 @@
 name: Deploy new version
-on: push
+on: 
+  push:
+    branches:
+      - master
+      
 jobs:
   deploy_blog:
     runs-on: ubuntu-latest
