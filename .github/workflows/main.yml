@@ -2,8 +2,8 @@ name: Deploy new version
 on: push
 jobs:
   deploy_blog:
-  runs-on: ubuntu-latest
-  steps:
+    runs-on: ubuntu-latest
+    steps:
     - name: Checkout master
       uses: actions/checkout@v1
     - name: Build blog and deploy
