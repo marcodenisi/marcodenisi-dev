@@ -31,7 +31,7 @@ jobs:
 
         # build site and push to repo
         /tmp/hugo -t cocoa
-        msg = $(git log -1 --pretty=%B)
+        msg=$(git log -1 --pretty=%B)
         cd public
         git add .
         git commit -m "$msg"
