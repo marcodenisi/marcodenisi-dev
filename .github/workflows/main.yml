@@ -14,6 +14,9 @@ jobs:
         wget -O /tmp/hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v${DOWNLOAD_HUGO_VERSION}/hugo_extended_${DOWNLOAD_HUGO_VERSION}_Linux-64bit.tar.gz &&\
         tar -zxf /tmp/hugo.tar.gz -C /tmp
 
+        # download theme
+        git clone https://github.com/nishanths/cocoa-hugo-theme.git themes/cocoa 
+
         # configure git
         git config --global user.name "$USER"
         git config --global user.email "$EMAIL"
@@ -25,10 +28,7 @@ jobs:
         chmod 600 ~/.ssh/id_rsa
     
         # build site and push to repo
-        # /tmp/hugo
-        cd themes/cocoa
-        ls
-        git status
+        /tmp/hugo -t cocoa
         #cd public
         #git add .
         #msg="rebuilding site `date`"
