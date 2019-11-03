@@ -11,26 +11,23 @@ jobs:
         set -e
 
         # download hugo
-        echo 'Downloading and installing Hugo'
         wget -O /tmp/hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v${DOWNLOAD_HUGO_VERSION}/hugo_extended_${DOWNLOAD_HUGO_VERSION}_Linux-64bit.tar.gz &&\
         tar -zxf /tmp/hugo.tar.gz -C /tmp
 
         # configure git
-        echo 'Configuring git'
         git config --global user.name "$USER"
         git config --global user.email "$EMAIL"
 
         # setup ssh
-        echo 'Setting up ssh'
         mkdir ~/.ssh
         chmod 700 ~/.ssh
         echo "${GIT_DEPLOY_KEY}" > ~/.ssh/id_rsa && \
         chmod 600 ~/.ssh/id_rsa
     
         # build site and push to repo
-        echo 'Building site and push to repo'
         /tmp/hugo -t cocoa
         pwd
+        ls
         #cd public
         #git add .
         #msg="rebuilding site `date`"
