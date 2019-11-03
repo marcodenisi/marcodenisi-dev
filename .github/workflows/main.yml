@@ -21,12 +21,13 @@ jobs:
         # setup ssh
         mkdir ~/.ssh
         chmod 700 ~/.ssh
-        echo "${GIT_DEPLOY_KEY}" > ~/.ssh/id_rsa && \
+        echo "${GIT_DEPLOY_KEY}" > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
+        git config --global core.sshCommand "ssh -i ~/.ssh/id_rsa -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no"
     
         # download theme and output repo
         git clone https://github.com/nishanths/cocoa-hugo-theme.git themes/cocoa
-        git clone https://github.com/marcodenisi/marcodenisi.github.io.git public 
+        git clone --depth=1 git@github.com:marcodenisi/marcodenisi.github.io.git public 
 
         # build site and push to repo
         /tmp/hugo -t cocoa
