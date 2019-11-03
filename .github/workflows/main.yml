@@ -25,6 +25,8 @@ jobs:
         chmod 600 ~/.ssh/id_rsa
     
         # build site and push to repo
+        git submodule init
+        git submodule update --recursive --remote
         /tmp/hugo -t cocoa
         pwd
         ls
