@@ -45,5 +45,3 @@ jobs:
         USER: ${{ secrets.USER }}
         EMAIL: ${{ secrets.EMAIL }}
         GIT_DEPLOY_KEY: ${{ secrets.GIT_DEPLOY_KEY }}
-
-
