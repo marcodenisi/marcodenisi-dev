@@ -1,7 +1,7 @@
 ---
 title: "Github Actions: a concrete example with Hugo and Latex"
 date: 2019-11-04T18:26:59+01:00
-draft: true
+draft: false
 categories: ["Development"]
 tags: ["cd", "github-actions", "github", "hugo"]
 ---
