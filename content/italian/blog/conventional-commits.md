@@ -1,6 +1,6 @@
 ---
 title: "Perchè dovresti usare Conventional Commits"
-date: 2020-01-10T12:30:41+01:00
+date: 2020-01-10T10:30:41+01:00
 draft: false
 categories: ["Development"]
 tags: ["git", "semantic-versioning", "changelog", "automation", "cd"]
