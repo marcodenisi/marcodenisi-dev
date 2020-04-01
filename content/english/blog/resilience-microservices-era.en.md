@@ -34,7 +34,7 @@ The microservice bulkhead pattern is analogous to the bulkhead on a ship: failur
 Another really simple idea: if multiple calls to a remote service have to be made, you'd better split them during a certain range of time to make the external service able to serve all the requests.
 
 # An example: resilience4J
-Complete code is available [here](https://github.com/marcodenisi/resilience-microservices-era).
+Complete code is available [here](https://github.com/md-dev-blog/resilience-microservices-era).
 
 As stated by the official documentation, [resilience4j](https://github.com/resilience4j/resilience4j) is
 

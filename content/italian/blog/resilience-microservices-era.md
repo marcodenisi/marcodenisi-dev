@@ -35,7 +35,7 @@ Nel mondo dei microservizi, un bulkhead è un pattern che permette di isolare i 
 Anche qui l'idea è molto semplice: se si devono fare diverse chiamate verso uno stesso servizio esterno, conviene spalmare queste chiamate all'interno di un lasso temporale in modo da dare il tempo al servizio di servire tutte le richieste.
 
 # Un esempio: resilience4J
-Il codice completo dell'esempio è a disposizione a [questo link](https://github.com/marcodenisi/resilience-microservices-era).
+Il codice completo dell'esempio è a disposizione a [questo link](https://github.com/md-dev-blog/resilience-microservices-era).
 
 [Resilience4j](https://github.com/resilience4j/resilience4j) è una libreria che permette di applicare tutti questi pattern in Java. Prende spunto dalla libreria di Netflix [Hystrix](https://github.com/Netflix/Hystrix), attualmente in *maintenance mode*.
 
