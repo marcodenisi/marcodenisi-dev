@@ -34,7 +34,7 @@ Queste strategie sono delle regole che gli sviluppatori si danno su:
 
 # La Divina Commedia: branching edition
 
-Esistono una pletora di strategie diverse, ognuna con i suoi pro e contro (git flow, GitHub flow, trunk based development, ...). Quello che voglio descrivere è un po' il mio viaggio tra le strategie che abbiamo adottato, e parlando di viaggi...
+Esiste una pletora di strategie diverse, ognuna con i suoi pro e contro (git flow, GitHub flow, trunk based development, ...). Quello che voglio descrivere è un po' il mio viaggio tra le strategie che abbiamo adottato, e parlando di viaggi...
 
 ![Dante Alighieri](/img/articles/branching/dante.png)
 
