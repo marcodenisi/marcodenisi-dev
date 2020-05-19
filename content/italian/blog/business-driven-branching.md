@@ -1,7 +1,7 @@
 ---
 title: "Business Driven Branching"
 date: 2020-05-19T16:29:13+02:00
-draft: true
+draft: false
 ---
 
 L'ultimo anno e mezzo è stato particolarmente denso dal punto di vista lavorativo. Infatti, il progetto sul quale ho lavorato maggiormente è stato oggetto di un paio di grossi cambiamenti organizzativi che hanno richiesto anche un cambio di paradigma della gestione del codice.

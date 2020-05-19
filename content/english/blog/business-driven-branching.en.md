@@ -1,7 +1,7 @@
 ---
 title: "Business Driven Branching"
 date: 2020-05-19T16:29:13+02:00
-draft: true
+draft: false
 ---
 
 The last year and a half has been particularly demanding from the business point of view. In fact, the project on which I worked on has seen a couple of big organizational changes that required also a change in the way the codebase was managed.
