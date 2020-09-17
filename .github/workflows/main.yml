@@ -30,7 +30,7 @@ jobs:
         git config --global core.sshCommand "ssh -i ~/.ssh/id_rsa -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no"
     
         # download theme and output repo
-        git clone https://github.com/nishanths/cocoa-hugo-theme.git themes/cocoa
+        git clone https://github.com/nishanths/cocoa-hugo-theme.git themes/cocoa-hugo-theme
         git clone --depth=1 git@github.com:marcodenisi/marcodenisi.github.io.git public 
 
         # build site and push to repo
@@ -41,7 +41,7 @@ jobs:
         git commit -m "$msg"
         git push origin master
       env:
-        DOWNLOAD_HUGO_VERSION: '0.54.0'
+        DOWNLOAD_HUGO_VERSION: '0.75.1'
         USER: ${{ secrets.USER }}
         EMAIL: ${{ secrets.EMAIL }}
         GIT_DEPLOY_KEY: ${{ secrets.GIT_DEPLOY_KEY }}
