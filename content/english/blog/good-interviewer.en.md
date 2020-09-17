@@ -2,8 +2,8 @@
 title: "Good Interviewer"
 date: 2020-09-17T12:39:10+02:00
 draft: false
-categories: ["Development"]
-tags: ["git", "semantic-versioning", "changelog", "automation", "cd"]
+categories: ["Interviews"]
+tags: ["interviews", "best practises"]
 ---
 
 During the last two years I found myself having to interview a lot of people. Mindful of some bad experiences in the past, I promised myself to do my best: I wanted the people interviewed to feel comfortable talking to me.
