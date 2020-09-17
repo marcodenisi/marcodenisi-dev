@@ -1,7 +1,7 @@
 ---
 title: "Good Interviewer"
 date: 2020-09-17T12:39:10+02:00
-draft: true
+draft: false
 categories: ["Development"]
 tags: ["git", "semantic-versioning", "changelog", "automation", "cd"]
 ---

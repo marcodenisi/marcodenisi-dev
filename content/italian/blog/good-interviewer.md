@@ -1,7 +1,7 @@
 ---
 title: "Come essere un buon intervistatore"
 date: 2020-09-17T12:39:10+02:00
-draft: true
+draft: false
 categories: ["Interviews"]
 tags: ["interviews", "best practises"]
 ---
