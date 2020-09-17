@@ -34,7 +34,7 @@ jobs:
         git clone --depth=1 git@github.com:marcodenisi/marcodenisi.github.io.git public 
 
         # build site and push to repo
-        /tmp/hugo -t cocoa
+        /tmp/hugo -t cocoa-hugo-theme
         msg=$(git log -1 --pretty=%B)
         cd public
         git add .
