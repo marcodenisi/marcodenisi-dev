@@ -20,7 +20,7 @@ What would I recommend to myself from two years ago?
 
 ## 2. Know who's in front of you
 
-- **Be prepared**: do your homework and prepare for the interview, get to know the candidate through his resume, his Linkedin, Github, ...
+- **Be prepared**: do your homework and prepare for the interview, get to know the candidate through his/her resume, Linkedin, Github, ...
 
 - **Show interest**. Try quoting something you liked about the CV or a project on Github. 
 
